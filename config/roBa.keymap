@@ -6,7 +6,6 @@
 #define MOUSE 4
 #define SCROLL 5
 #define NUM 6
-
 #define JP_ZKHK  GRAVE        // Zenkaku ↔ Hankaku ↔ Kanji (半角 ↔ 全角 ↔ 漢字)
 #define JP_MINUS MINUS        // -
 #define JP_CARET EQUAL        // ^
@@ -57,28 +56,13 @@
         compatible = "zmk,combos";
 
         tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
+            bindings = <&mkp MB2>;
+            key-positions = <19 20>;
         };
 
         shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+            bindings = <&mkp MB1>;
+            key-positions = <7 8>;
         };
     };
 
@@ -118,10 +102,10 @@
 
         FUNCTION {
             bindings = <
-&kp LS(N5)  &kp LS(N4)  &kp LS(N6)  &trans  &trans                       &kp INT3  &kp F2  &kp F3  &kp F4  &kp F5
-&trans      &trans      &trans      &trans  &trans  &trans      &kp F13  &kp F6    &kp F7  &kp F8  &kp F9  &kp F10
-&trans      &trans      &trans      &trans  &trans  &trans      &trans   &trans    &trans  &trans  &trans  &kp F11
-&trans      &trans      &trans      &trans  &trans  &trans      &trans   &trans                            &kp F12
+&kp LS(N5)  &kp LS(N4)  &kp LS(N6)  &kp LS(NON_US_BSLH)  &kp SLASH                              &kp INT3  &kp F2  &kp F3  &kp F4  &kp F5
+&trans      &trans      &trans      &trans               &kp LS(KP_MINUS)  &trans      &kp F13  &kp F6    &kp F7  &kp F8  &kp F9  &kp F10
+&trans      &trans      &trans      &trans               &trans            &trans      &trans   &trans    &trans  &trans  &trans  &kp F11
+&trans      &trans      &trans      &trans               &trans            &trans      &trans   &trans                            &kp F12
             >;
         };
 
