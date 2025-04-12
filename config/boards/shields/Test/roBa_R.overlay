@@ -23,6 +23,14 @@
     };
 };
 
+&mt {
+    tapping-term-ms = <200>; // This is the value already set by default
+};
+
+&lt {
+    tapping-term-ms = <200>; // This is the value already set by default
+};
+
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
