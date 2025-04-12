@@ -1,10 +1,6 @@
 #include "roBa.dtsi"
 
 
-&mt {
-    tapping-term-ms = <180>; // This is the value already set by default
-};
-
 &default_transform {
     col-offset = <6>;
 };
