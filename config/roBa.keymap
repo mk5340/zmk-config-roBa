@@ -104,7 +104,7 @@
 &kp RC(W)       &kp LG(LEFT_ARROW)  &kp RG(UP_ARROW)  &kp LG(RIGHT_ARROW)  &trans                             &kp PAGE_UP         &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_DOWN
 &kp LEFT_SHIFT  &kp LCTRL           &kp LEFT_ALT      &kp TAB              &trans  &trans      &kp LS(LG(S))  &kp LA(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(RIGHT_ARROW)
 &kp LC(T)       &kp LC(X)           &kp LC(C)         &kp LC(V)            &trans  &trans      &kp LG(V)      &kp LC(PAGE_UP)     &kp F2          &kp TAB         &kp LEFT_ALT     &kp LC(PAGE_DOWN)
-&trans          &trans              &trans            &trans               &trans  &trans      &kp RG(V)      &kp DELETE                                                           &trans
+&bootloader          &trans              &trans            &trans               &trans  &trans      &kp RG(V)      &kp DELETE                                                           &trans
             >;
         };
 
