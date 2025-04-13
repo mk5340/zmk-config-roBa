@@ -120,9 +120,9 @@
 };
 
 &mt {
-    tapping-term-ms = <180>; // This is the value already set by default
+    tapping-term-ms = <400>; // This is the value already set by default
 };
 
 &lt {
-    tapping-term-ms = <180>; // This is the value already set by default
+    tapping-term-ms = <400>; // This is the value already set by default
 };
