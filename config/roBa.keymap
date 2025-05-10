@@ -8,7 +8,7 @@
 #define NUM 6
 
 // OS設定を日本語キーボードのまま使用するための変換定義
-#define JP_DQUOTE       AT                // "
+#define JP_DQUOTE       AT                // 
 #define JP_AMPERSAND    CARET             // &
 #define JP_QUOTE        AMPERSAND         // '
 #define JP_EQUAL        UNDER             // =
@@ -16,7 +16,7 @@
 #define JP_YEN          0x89              // ¥
 #define JP_PLUS         COLON             // +
 #define JP_TILDE        PLUS              // ~
-#define JP_PIPE         LS(0x89)          // |
+#define JP_PIPE         LS(0x89)          // 
 #define JP_AT           LEFT_BRACKET      // @
 #define JP_COLON        SINGLE_QUOTE      // :
 #define JP_ASTERISK     DOUBLE_QUOTES     // *
@@ -63,7 +63,7 @@
 
         FUNCTION {
             bindings = <
-&kp LS(N5)  &kp LS(N4)  &kp LS(N6)  &kp JP_UNDERSCORE  &kp SLASH                              &kp JP_YEN   &kp JP_LBRACE   &kp JP_RBRACE   &kp F4  &kp F5
+&kp LS(N5)  &kp LS(N4)  &kp JP_AMPERSAND   &kp JP_UNDERSCORE  &kp SLASH                              &kp JP_YEN   &kp JP_LBRACE   &kp JP_RBRACE   &kp F4  &kp F5
 &trans      &trans      &trans      &trans               &kp LS(KP_MINUS)  &trans      &kp F13  &kp JP_AT     &kp JP_LPAREN   &kp JP_RPAREN   &kp F9  &kp F10
 &trans      &trans      &trans      &trans               &trans            &trans      &trans   &kp JP_BACKQUOTE    &kp JP_LBRACKET   &kp JP_RBRACKET   &trans  &kp F11
 &trans      &trans      &trans      &trans               &trans            &trans      &trans   &trans                            &kp F12
@@ -73,7 +73,7 @@
         NUM {
             bindings = <
 &none  &none  &none  &none  &none                     &kp KP_SLASH   &kp N7        &kp N8        &kp N9        &kp INT_KPJPCOMMA
-&none  &none  &none  &none  &none  &none      &none   &kp COLON      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
+&none  &none  &none  &none  &none  &bootloader      &bootloader   &kp COLON      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
 &none  &none  &none  &none  &none  &none      &trans  &kp SEMICOLON  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DOT
 &none  &none  &none  &none  &none  &none      &none   &kp DELETE                                               &none
             >;
