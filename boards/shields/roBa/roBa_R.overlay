@@ -1,4 +1,7 @@
 #include "roBa.dtsi"
+//makoto追加
+#include <input/processors.dtsi>
+#include <behaviors/input_gestures_accel.dtsi>
 
 &default_transform {
     col-offset = <6>;
@@ -15,10 +18,52 @@
 };
 
 / {
+
+    /* 縦スクロール用 */
+    scroll_inertia_v: scroll_inertia_v {
+        compatible = "zmk,input-processor-scroll-inertia";
+        #input-processor-cells = <0>;
+        axis      = <1>;
+        layer     = <3>;
+        scale     = <1>;
+        scale-div = <30>;
+    };
+
+    /* 横スクロール用（必要に応じてレイヤー番号を変更して使用） */
+    scroll_inertia_h: scroll_inertia_h {
+        compatible = "zmk,input-processor-scroll-inertia";
+        #input-processor-cells = <0>;
+        axis      = <2>;
+        layer     = <1>;
+        scale     = <1>;
+        scale-div = <30>;
+    };
+
     trackball_listener {
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
+
+        input-processors = <&pointer_accel>;
+
+        scroller_v {
+            layers = <3>;
+            input-processors = <
+                &zip_y_scaler (-1) 1
+                &zip_xy_to_scroll_mapper
+                &scroll_inertia_v
+                &zip_scroll_scaler 1 30
+            >;
+        };
+
+        scroller_h {
+            layers = <1>;
+            input-processors = <
+                &zip_xy_to_scroll_mapper
+                &scroll_inertia_h
+                &zip_scroll_scaler 1 30
+            >;
+        };
     };
 };
 
@@ -58,4 +103,15 @@
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
+};
+
+
+&pointer_accel {
+    input-type = <INPUT_EV_REL>;
+    track-remainders;
+    min-factor = <300>;
+    max-factor = <3000>;
+    speed-threshold = <1500>;
+    speed-max = <6000>;
+    acceleration-exponent = <2>;
 };
