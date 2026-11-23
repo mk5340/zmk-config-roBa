@@ -4,6 +4,10 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: kumamuk-git
       url-base: https://github.com/kumamuk-git
+    - name: oleksandrmaslov # ← 追加
+      url-base: https://github.com/oleksandrmaslov # ← 追加
+    - name: mjmjm0101 #追加
+      url-base: https://github.com/mjmjm0101 #追加
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -11,6 +15,11 @@ manifest:
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: kumamuk-git
-      revision: main
+    - name: zmk-pointing-acceleration # ← 追加
+      remote: oleksandrmaslov # ← 追加
+      revision: main # ← 追加
+    - name: zmk-input-processor-scroll-inertia #追加
+      remote: mjmjm0101 #追加
+      revision: main #追加
   self:
     path: config
