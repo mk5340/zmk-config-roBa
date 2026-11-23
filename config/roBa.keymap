@@ -128,7 +128,7 @@
         ARROW {
             bindings = <
 &kp LC(W)       &kp LG(LEFT_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)  &Add                           &kp PAGE_UP            &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_DOWN
-&kp LEFT_SHIFT  &kp CARET           &kp LEFT_ALT      &kp TAB              &Delete  &none      &none      &kp LA(LEFT_ARROW)     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(RIGHT_ARROW)
+&kp LEFT_SHIFT  &kp LCTRL           &kp LEFT_ALT      &kp TAB              &Delete  &none      &none      &kp LA(LEFT_ARROW)     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(RIGHT_ARROW)
 &kp LC(T)       &kp LC(X)           &kp LC(C)         &kp LC(V)            &none    &none      &none      &kp LC(PAGE_UP)        &kp F2          &kp F5          &kp F4           &kp LC(PAGE_DOWN)
 &none           &none               &none             &none                &none    &none      &kp LG(V)  &mt LEFT_SHIFT DELETE                                                   &kp F2
             >;
