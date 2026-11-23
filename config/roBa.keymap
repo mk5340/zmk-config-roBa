@@ -111,7 +111,7 @@
             bindings = <
 &kp LS(N5)    &kp LS(DOLLAR)    &kp LS(NUMBER_6)      &kp LS(INT1)       &kp SLASH                          &kp INT3              &kp LS(RIGHT_BRACKET)  &kp LS(NUHS)      &kp LESS_THAN     &kp GREATER_THAN
 &kp LS(INT3)  &kp LS(NUMBER_3)  &kp LS(SINGLE_QUOTE)  &kp LS(SEMICOLON)  &kp LS(MINUS)  &none       &none   &kp LEFT_BRACKET      &kp LS(NUMBER_8)       &kp LS(NUMBER_9)  &kp SEMICOLON     &kp SINGLE_QUOTE
-&kp EQUAL     &kp LS(EQUAL)     &trans                &kp LS(NUMBER_1)   &kp LS(SLASH)  &none       &none   &kp LS(LEFT_BRACKET)  &kp RIGHT_BRACKET      &kp NUHS          &kp LS(NUMBER_7)  &kp NUMBER_2
+&kp EQUAL     &kp LS(EQUAL)     &trans                &kp LS(NUMBER_1)   &kp LS(SLASH)  &none       &none   &kp LS(LEFT_BRACKET)  &kp RIGHT_BRACKET      &kp NUHS          &kp LS(NUMBER_7)  &kp LS(NUMBER_2)
 &trans        &trans            &trans                &trans             &trans         &trans      &trans  &trans                                                                           &kp F12
             >;
         };
